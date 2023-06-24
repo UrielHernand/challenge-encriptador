@@ -18,23 +18,24 @@
       
         <div class="sections">
           <section class="section">
-            <input placeholder="Ingrese el texto aquí" class="input" id="inputs"/>
+            <input placeholder="Ingrese el texto aquí" class="input" id="input"/>
       
             <p> 📌Sólo letras minúsculas y sin acentos <br></br> </p>
             <div class="actions">
-              <button class="button"><h4>Encriptar</h4></button>
-              <button class="button2"><h4>Desencriptar</h4></button>
+              <button class="button" onclick={encriptar()}><h4>Encriptar</h4></button>
+              <button class="button2" onclick={desencriptar()}><h4>Desencriptar</h4></button>
             </div>
           </section>
       
           <section class="section2">
-            <img src="./Images/Muñeco.jpg" class="muñeco" alt="muñeco" />
+            <img src="./Images/Muñeco.jpg" class="muñeco" alt="muñeco" id="muneco" />
             <div class="description">
-              <p class="code">Ningún mensaje fue encontrado</p>
+              <p class="code" id="descripcion">Ningún mensaje fue encontrado</p>
             </div>
           </section>
         </div>
       </main>
+      <script src="./index.js"></script>
       
     
 </body>
